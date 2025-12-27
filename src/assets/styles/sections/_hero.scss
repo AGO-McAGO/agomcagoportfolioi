@@ -1,0 +1,41 @@
+@use "../abstracts/base" as *;
+@use "../abstracts/colours" as *;
+@use "../abstracts/fonts" as *;
+@use "../abstracts/icons" as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+
+#hero {
+    @include flexcolumn;
+    width: 100%;
+    min-height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("./../imgs/index/agosoomcagohero.jpg") fixed no-repeat center /cover;
+    
+    div {
+        margin: $marginxxliv 0rem;
+        
+        h1 { font-size: $font-sizelg; }
+
+        .actioncall { @include buttons; a { color: var(--BRANDI); } }
+        .actioncall:hover { @include buttonshover; a { color: var(--BRANDII); } }
+    
+    }
+
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    #hero {
+        padding: $paddingxxliii $paddingxxli 0rem $paddingsection;
+        
+        div h1 { font-size: $font-sizexxl; }
+        div p { font-size: $font-sizelg; }
+    
+    }
+
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    #hero div p { font-size: $font-sizexl; text-align: center; }
+}

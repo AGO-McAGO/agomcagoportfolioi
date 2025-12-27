@@ -1,0 +1,28 @@
+@use "../abstracts/base" as *;
+@use "../abstracts/colours" as *;
+@use "../abstracts/fonts" as *;
+@use "../abstracts/icons" as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+
+#feedback {
+    @include flexcolumn;
+    gap: 11rem;
+    min-height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("./../imgs/index/agosoomcagohero.jpg") fixed no-repeat center /cover;
+
+    h1 { font-size: $font-sizexxl; }
+
+    .homelink {
+        @include buttons;
+        
+        a { color: var(--BRANDI); }
+    }
+
+    .homelink:hover {
+        @include buttonshover;
+        
+        a { color: var(--BRANDII); }
+    }
+
+}

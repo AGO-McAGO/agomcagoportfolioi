@@ -1,0 +1,21 @@
+@use "../abstracts/colours" as *;
+@use "../abstracts/variables" as *;
+
+
+@mixin flexrow { display: flex; align-items: center; justify-content: space-between; }
+
+@mixin flexcolumn { display: flex; flex-direction: column; }
+
+@mixin center { max-width: 90%; min-width: 90%; margin: auto; }
+
+@mixin buttons {
+    margin: $marginxl 0rem;
+    background: var(--BRANDIII);
+    color: var(--BRANDI);
+    padding: $paddingxxs;
+    cursor: pointer;
+    border-radius: $border-radiussm;
+    font: bold $font-sizexs $familyii;
+    transition: all ease-in-out 0.4s;
+}
+@mixin buttonshover { background: var(--SUCCESS); color: var(--BRANDII); }

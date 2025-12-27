@@ -1,0 +1,17 @@
+@use "../abstracts/base" as *;
+@use "../abstracts/colours" as *;
+@use "../abstracts/fonts" as *;
+@use "../abstracts/icons" as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+
+nav .navlist {
+  @include flexcolumn;
+  gap: 2.5rem;
+  
+  .navlink:hover .navicon { box-shadow: $box-shadow; color: var(--BRANDIII); }
+  .navlink.active .navicon { color: var(--BRANDIII); }
+  
+  .navicon { transition: all 0.4s; }
+
+}

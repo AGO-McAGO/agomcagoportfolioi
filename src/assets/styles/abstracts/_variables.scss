@@ -1,0 +1,79 @@
+@use "colours" as *;
+@use "../abstracts/fonts" as *;
+
+
+// padding
+$padding: 0.1rem;
+$paddingxxs: 0.25rem;
+// $paddingxs: 0.4rem;
+$paddingsm: 0.5rem;
+$paddinglg: 0.75rem;
+$paddingxl: 1rem;
+// $paddingxxl: 1.5rem;
+$paddingxxli: 2rem;
+// $paddingxxlii: 2.5rem;
+$paddingxxliii: 4rem;
+
+$paddingsection: 19rem;
+// $paddingsection: 20%;
+
+
+// margin
+// $margin: 0.1rem;
+// $marginxxs: 0.2rem;
+// $marginxs: 0.4rem;
+// $marginsm: 0.5rem;
+// $marginlg: 0.75rem;
+$marginxl: 1rem;
+$marginxxl: 1.5rem;
+// $marginxxli: 2rem;
+$marginxxlii: 2.5rem;
+// $marginxxliii: 4rem;
+$marginxxliv: 7rem;
+
+
+// fonts
+$familyi: "Gupter";
+$familyii: "Gabriela";
+// $familyiii: "Comic Sans MS", sans-serif, "Courier New", Courier, "lucida console";
+// $font-familyiv: "Rubik Wet Paint";
+// $font-familyv: "Shojumaru";
+// $font-familyvi: garamond;
+// $font-familyvii: "century expanded";
+// $font-familyviiii: "Tilt Prism";
+
+$font-size: 1rem;
+// $font-sizexxs: 1.2rem;
+$font-sizexs: 1.4rem;
+$font-sizesm: 1.7rem;
+$font-sizelg: 2rem;
+$font-sizexl: 2.5rem;
+$font-sizexxl: 4rem;
+// $font-sizexxli: 5rem;
+// $font-sizexxlii: 7rem;
+
+
+// border
+$border-radiusxxs: 0.1rem;
+$border-radiusxs: 0.2rem;
+$border-radiussm: 0.4rem;
+$border-radiuslg: 1rem;
+$border-circle: 50%;
+
+
+// shadow
+$box-shadow: 0 0 0.7rem var(--BRANDIII), 0 0 2.5rem var(--BRANDIII), 0 0 5rem var(--BRANDIII);
+$box-shadowi: 0.5rem 0.1rem 1.5rem var(--BRANDIII);
+// $box-shadowii: inset 0 0 10px rgba(0, 0, 0, 0.3);
+// $box-shadowiii: 2px 2px 5px var(--BRANDIII), -2px -2px 5px var(--BRANDII);
+// $box-shadowiv: 0.15rem 0.25rem 1rem rgba(0,0,0,0.7);
+// $box-shadowv: 0 0.2rem 0.7rem rgba(0, 0, 0, 0.7);
+// $box-shadowvi: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+
+// $textshadowi: 0.07rem 0.1rem 0.1rem var(--BLACK);
+// $textshadowii: 0.07rem 0.1rem 0.1rem var(--WHITE);
+
+
+// backgrounds
+// $backgrounddarken: #00000070;
+// $backgrounddarker: #000000e7;

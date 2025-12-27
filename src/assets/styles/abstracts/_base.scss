@@ -1,0 +1,62 @@
+@use "colours" as *;
+@use "variables" as *;
+@use "fonts" as *;
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  min-height: 100vh;
+  background: var(--BRANDI);
+  color: var(--BRANDII);
+  font-family: $familyi;
+  font-size: $font-sizexs;
+  
+  ul, li { list-style-type: none; }
+
+  img { max-width: 100%; height: auto; }
+
+  a { text-decoration: none; }
+  
+  section {
+    padding: $paddingxxli;
+    
+    .title {
+      position: relative;
+      
+      h3 { font-size: $font-sizexl; font-weight: 700; position: relative; }
+      
+      h3:after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 5rem;
+        height: 0.1rem;
+        background: var(--BRANDIII);
+        left: 0;
+        bottom: 0;
+      }
+    
+    }
+
+  }
+
+}
+
+/*Extra Small devices (Small phones, 400px and up)*/
+@media (min-width: 400px) {}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  body section { padding: $paddingxxli $paddingxxli 0rem $paddingsection; }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {}
